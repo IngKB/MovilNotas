@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_cortes">
+        <item>Primer corte</item>
+        <item>Segundo corte</item>
+        <item>Tercer corte</item>
+
+    </string-array>
+</resources>

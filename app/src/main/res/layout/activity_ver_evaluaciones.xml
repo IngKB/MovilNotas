@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerEvaluaciones">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblTituloEvals"
+                android:layout_width="188dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="36dp"
+                android:text="Evaluaciones"
+                android:textColor="@color/aqua"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblSelectMatEval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15sp"
+                android:textColor="@color/aqua"
+                android:text="Seleccione una materia"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloEvals"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listMateriasEval"
+                android:layout_width="321dp"
+                android:layout_height="147dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblSelectMatEval" />
+
+            <TextView
+                android:id="@+id/lblCorte1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/aqua"
+                android:text="NOTA CORTE 1"
+                app:layout_constraintTop_toBottomOf="@+id/listMateriasEval"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/lblCorte1Val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/darkBlue"
+                android:text="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/listMateriasEval"
+                app:layout_constraintStart_toEndOf="@+id/lblCorte1"/>
+            <TextView
+                android:id="@+id/lblCorte2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/aqua"
+                android:text="NOTA CORTE 2"
+                app:layout_constraintTop_toBottomOf="@+id/lblCorte1"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/lblCorte2Val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/darkBlue"
+                android:text="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/lblCorte1Val"
+                app:layout_constraintStart_toEndOf="@+id/lblCorte2"/>
+            <TextView
+                android:id="@+id/lblCorte3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/aqua"
+                android:text="NOTA CORTE 3"
+                app:layout_constraintTop_toBottomOf="@+id/lblCorte2"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/lblCorte3Val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/darkBlue"
+                android:text="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/lblCorte2Val"
+                app:layout_constraintStart_toEndOf="@+id/lblCorte3"/>
+            <TextView
+                android:id="@+id/lblCorteFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/aqua"
+                android:text="NOTA MATERIA"
+                app:layout_constraintTop_toBottomOf="@+id/lblCorte3"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/lblCorteFinalVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/darkBlue"
+                android:text="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/lblCorte3Val"
+                app:layout_constraintStart_toEndOf="@+id/lblCorteFinal"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

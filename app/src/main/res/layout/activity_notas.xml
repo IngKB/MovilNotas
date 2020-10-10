@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarNotas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/lblTituloNot"
+                android:layout_width="188dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="36dp"
+                android:text="Registro notas"
+                android:textColor="@color/aqua"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/lblSelectMat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15sp"
+                android:textColor="@color/aqua"
+                android:text="Seleccione una materia"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloNot"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/lblSelected"
+                android:layout_width="123dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="15dp"
+                android:text="Materia"
+                android:textColor="@color/aqua"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/listMaterias" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listMaterias"
+                android:layout_width="321dp"
+                android:layout_height="147dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblSelectMat" />
+
+
+            <Spinner
+                android:id="@+id/SpinnerCortes"
+                android:layout_width="182dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/lblSelected"
+                app:layout_constraintTop_toBottomOf="@+id/listMaterias" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listAspectos"
+                android:layout_width="321dp"
+                android:layout_height="147dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SpinnerCortes" />
+
+            <TextView
+                android:id="@+id/lblPrimerlbl"
+                android:layout_width="134dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="8dp"
+                android:text="Nota Primer corte"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/listAspectos" />
+
+            <TextView
+                android:id="@+id/lblNotaPrimer"
+                android:layout_width="50dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/darkBlue"
+                android:textSize="15sp"
+                android:text="0.0"
+                app:layout_constraintStart_toEndOf="@+id/lblPrimerlbl"
+                app:layout_constraintTop_toBottomOf="@+id/listAspectos" />
+
+            <TextView
+                android:id="@+id/lblSegundlbl"
+                android:layout_width="134dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="8dp"
+                android:text="Nota Segundo corte"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblPrimerlbl" />
+
+            <TextView
+                android:id="@+id/lblNotaSegunda"
+                android:layout_width="50dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/darkBlue"
+                android:textSize="15sp"
+                android:text="0.0"
+                app:layout_constraintStart_toEndOf="@+id/lblSegundlbl"
+                app:layout_constraintTop_toBottomOf="@+id/lblNotaPrimer" />
+            <TextView
+                android:id="@+id/lblTercerlbl"
+                android:layout_width="134dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="8dp"
+                android:text="Nota Tercer corte"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblSegundlbl" />
+            <TextView
+                android:id="@+id/lblNotaTercer"
+                android:layout_width="50dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/darkBlue"
+                android:textSize="15sp"
+                android:text="0.0"
+                app:layout_constraintStart_toEndOf="@+id/lblTercerlbl"
+                app:layout_constraintTop_toBottomOf="@+id/lblNotaSegunda" />
+            <TextView
+                android:id="@+id/lblFinallbl"
+                android:layout_width="134dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="8dp"
+                android:text="Nota FINAL"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblTercerlbl" />
+            <TextView
+                android:id="@+id/lblNotaFinal"
+                android:layout_width="50dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/darkBlue"
+                android:textSize="15sp"
+                android:text="0.0"
+                app:layout_constraintStart_toEndOf="@+id/lblFinallbl"
+                app:layout_constraintTop_toBottomOf="@+id/lblNotaTercer" />
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="112dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="112dp"
+                android:background="@color/aqua"
+                android:text="Actualizar Notas"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/lblNotaFinal"
+                app:layout_constraintTop_toBottomOf="@+id/listAspectos" />
+
+            <Button
+                android:id="@+id/btnRegistrarNota"
+                android:layout_width="194dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/aqua"
+                android:text="REGISTRAR EVALUACION"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblFinallbl" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/btnRegistrarNota"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NotasApp</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btn_Update">Update</string>
+    <string name="btn_Delete">Delete</string>
+    <string name="TituloMenu">Menu Docente</string>
+    <string name="TituloRegistrarM">Registro de Materia</string>
+    <string name="subTituloMat">Datos de la materia</string>
+    <string name="subTituloRub">Datos de la rúbrica</string>
+    <string name="btn_GoMaterias">Registrar Materia</string>
+    <string name="btn_GoNotas">Registrar Notas</string>
+</resources>
